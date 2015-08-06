@@ -18,7 +18,7 @@ class TodoItemsController < ApplicationController
     else
       flash[:warning] = "Item Could Not Be Removed!"
     end
-    redirect_to @todo_list
+    redirect_to root_url
   end
   
   def complete
